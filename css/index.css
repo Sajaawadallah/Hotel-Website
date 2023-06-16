@@ -1,0 +1,97 @@
+/* blogs start */
+.blogs .title h2 {
+  font-weight: var(--bold-font);
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 2px;
+  color: var(--black);
+}
+
+.blogs .card .card-img-overlay {
+  top: 60%;
+}
+
+.blogs .card .card-img-overlay .card-text {
+  font-weight: var(--xxbold-font);
+  font-size: 20px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.blogs .card {
+  border: none !important;
+}
+
+.blogs .card img {
+  height: 290px;
+}
+
+.blogs .card .top-overlary {
+  width: 89px;
+  height: 34px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: var(--blog-blue);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-weight: var(--rguler-font);
+  font-size: 20px;
+  line-height: 44px;
+  letter-spacing: 2px;
+}
+
+.blogs figure {
+  position: relative;
+}
+.blogs figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.blogs figure:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.blogs figure img {
+  transition: transform 0.5s 0.2s ease;
+  -webkit-transition: transform 0.5s 0.2s ease;
+  -moz-transition: transform 0.5s 0.2s ease;
+  -ms-transition: transform 0.5s 0.2s ease;
+  -o-transition: transform 0.5s 0.2s ease;
+}
+/* blogs end */

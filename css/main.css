@@ -26,8 +26,18 @@ a {
   --light-black: rgba(0, 0, 0, 0.09);
   --footer-link-black: rgba(0, 0, 0, 0.77);
   --footer-blue: #1e34ff;
+  --blog-blue: rgba(30, 52, 255, 0.64);
+  --white: #fff;
+  --xxbold-font: 700;
   --bold-font: 500;
   --rguler-font: 400;
+}
+
+.lines2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* universal and main style  end */
