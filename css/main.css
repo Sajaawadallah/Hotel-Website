@@ -1,0 +1,19 @@
+/* universal and main style  start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+button,
+.btn,
+input,
+textarea {
+  box-shadow: none !important;
+}
+a {
+  text-decoration: none;
+}
+
+/* universal and main style  end */
