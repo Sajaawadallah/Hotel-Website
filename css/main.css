@@ -1,11 +1,13 @@
-/* import font from google font */
+/* import fonts from google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
 /* universal and main style  start */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Tajawal", sans-serif;
 }
 
 button,
@@ -18,4 +20,64 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --black: #000;
+  --main-blue: #4d5fff;
+  --light-black: rgba(0, 0, 0, 0.09);
+  --footer-link-black: rgba(0, 0, 0, 0.77);
+  --footer-blue: #1e34ff;
+  --bold-font: 500;
+  --rguler-font: 400;
+}
+
 /* universal and main style  end */
+
+/* footer start */
+
+footer .top-footer .links-menu .nav-link {
+  font-weight: var(--rguler-font);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: var(--footer-link-black);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+footer .top-footer .links-menu .nav-link:hover {
+  color: var(--footer-blue);
+  margin-right: 5px;
+}
+footer .top-footer .links-menu .top-title {
+  font-weight: var(--bold-font);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+footer .botom-footer {
+  border-top: 1px solid var(--light-black);
+}
+footer .botom-footer .copy-right {
+  font-weight: var(--bold-font);
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: var(--black);
+}
+footer .botom-footer .footer-icons .contact-icon i {
+  color: var(--black);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+footer .botom-footer .footer-icons .contact-icon:hover i {
+  color: var(--main-blue);
+}
+
+/* footer end */
