@@ -48,6 +48,13 @@ a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper {
+  z-index: 0 !important;
+}
 
 /* universal and main style  end */
 

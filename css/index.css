@@ -1,3 +1,65 @@
+/* our clints start */
+.our-clints {
+  margin-bottom: 7rem;
+}
+.our-clints .title h2 {
+  font-weight: var(--xxbold-font);
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.our-clints .title p {
+  font-weight: var(--rguler-font);
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--title-gray);
+}
+
+.our-clints .container-fluid {
+  background: #ffffff;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+}
+.our-clints .control .next,
+.our-clints .control .prev {
+  position: absolute;
+  z-index: 20;
+  top: 43%;
+  color: var(--white) !important;
+  font-weight: 800 !important;
+  background: rgba(30, 52, 255, 0.7);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-clints .control .prev {
+  left: 20px !important;
+}
+
+.our-clints .control .next {
+  right: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .our-clints .control .next,
+  .our-clints .control .prev {
+    display: none;
+  }
+}
+/* our clints end */
+
 /* clints rate start */
 .clints-rate {
   margin-bottom: 7rem;
@@ -22,7 +84,7 @@
   border-radius: 19px;
   display: flex;
   flex-direction: column;
-  box-shadow: -4px 8px 4px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.08);
   width: 100%;
   height: 258px;
   margin: 0;
