@@ -1,4 +1,118 @@
+/* clints rate start */
+.clints-rate {
+  margin-bottom: 7rem;
+}
+.clints-rate .title h2 {
+  font-weight: var(--xxbold-font);
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.clints-rate .title p {
+  font-weight: var(--rguler-font);
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--title-gray);
+}
+.clints-rate .clint-card {
+  background: var(--white);
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 8px 4px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  height: 258px;
+  margin: 0;
+}
+.clints-rate .clint-card .clint-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 73px;
+  height: 73px;
+  overflow: hidden;
+}
+.clints-rate .clint-card .clint-img img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.clints-rate .clint-card .clint-name p {
+  font-weight: var(--xxbold-font);
+  font-size: 18px;
+  line-height: 50px;
+  color: var(--clint-name-color);
+}
+.clints-rate .clint-card .clint-name .rate-stars i {
+  color: rgba(224, 224, 224, 1);
+}
+
+.clints-rate .clint-card .clint-name .rate-stars .checked {
+  color: var(--star-color);
+}
+.clints-rate .clint-card .clint-comment p {
+  font-weight: var(--rguler-font);
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: var(--title-gray);
+}
+
+.clints-rate .control .next1,
+.clints-rate .control .prev1 {
+  position: absolute;
+  z-index: 20;
+  top: 43%;
+  color: var(--white) !important;
+  font-weight: 800 !important;
+  background: rgba(30, 52, 255, 0.7);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clints-rate .control .prev1 {
+  left: 20px !important;
+}
+
+.clints-rate .control .next1 {
+  right: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .clints-rate .control .next1,
+  .clints-rate .control .prev1 {
+    display: none;
+  }
+}
+
+/* clints rate end */
+
 /* blogs start */
+
 .blogs .title h2 {
   font-weight: var(--bold-font);
   font-size: 32px;
@@ -49,6 +163,20 @@
 
 .blogs figure {
   position: relative;
+  margin-bottom: 0px;
+}
+.blogs figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 24%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .blogs figure::before {
   position: absolute;
