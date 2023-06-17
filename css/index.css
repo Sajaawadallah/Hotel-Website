@@ -1,4 +1,21 @@
-/*services start  */
+/* about us start */
+.about-us h6 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 50px;
+  color: var(--black);
+}
+.about-us p {
+  font-weight: var(--bold-font);
+  line-height: 40px;
+  color: var(--black);
+}
+.about-us h6 span {
+  color: rgba(78, 96, 255, 1);
+}
+/* about us end */
+
+/* services start  */
 
 .services {
   margin-bottom: 8rem;
