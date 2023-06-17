@@ -1,3 +1,79 @@
+/* numbers start */
+
+.numbers {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 0;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+.numbers::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1 !important;
+  background: var(--bg-color);
+  top: 0;
+}
+
+.numbers .values-num h2 {
+  font-weight: var(--xxbold-font);
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+.numbers .values-num h3 {
+  font-weight: var(--xbold-font);
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
+.numbers .values-num h4 {
+  font-weight: var(--bold-font);
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+
+.numbers .values-num .clintnum-bottom {
+  background: var(--white);
+  box-shadow: 0px 3px 41px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 183px;
+  height: 171px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: -85.5px;
+}
+
+.numbers .values-num h5,
+.numbers .values-num h6 {
+  font-weight: var(--bold-font);
+  font-size: 26px;
+  color: var(--black);
+}
+.numbers .values-num h6 {
+  font-size: 15px !important;
+}
+/* numbers end */
+
 /* our clints start */
 .our-clints {
   margin-bottom: 7rem;
