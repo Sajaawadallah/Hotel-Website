@@ -7,47 +7,12 @@ header .land-sec {
   height: 1000px;
 }
 
-header .land-sec .shin {
-  position: absolute;
-  right: -10px;
-  top: 0;
-}
 header .land-sec .top-ball {
   position: absolute;
   right: 50%;
   top: 0;
 }
-header .land-sec .side-img {
-  position: absolute;
-  left: 0px;
-  top: 10%;
-}
-header .land-sec .side-img img {
-  width: 300px;
-  position: relative;
-  height: 100%;
-}
 
-@media (max-width: 767px) {
-  header .land-sec .side-img {
-    display: none;
-  }
-  header .land-sec {
-    overflow: hidden;
-  }
-}
-
-/* header .land-sec .bottom-line {
-  position: absolute;
-  right: 0px;
-  top: 100%;
-} */
-
-@media (max-width: 950px) {
-  header .land-sec .bottom-line {
-    bottom: 60px;
-  }
-}
 header .land-sec h1 {
   font-weight: 900;
   font-size: 30px;
@@ -73,10 +38,7 @@ header .land-sec p {
   }
 
   header .land-sec {
-    height: 900px;
-  }
-  .about-us {
-    margin-top: -200px;
+    height: 1200px;
   }
 }
 
@@ -396,6 +358,9 @@ header {
 /* header end */
 
 /* about us start */
+.about-us {
+  margin-top: -200px;
+}
 .about-us h6 {
   font-weight: 800;
   font-size: 20px;
