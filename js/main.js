@@ -80,3 +80,27 @@ var swiper1 = new Swiper(".mySwiper1", {
 
 // counter for number section 
 new PureCounter();
+
+
+// stiky header
+
+window.onscroll = function () {
+    yFunction()
+};
+
+// Get the header
+var header = document.getElementById("myheader");
+
+
+var sticky = header.offsetTop;
+
+
+function yFunction() {
+    if (window.pageYOffset > sticky) {
+        header.style.display = "block";
+        header.style.transition = "all 2s 0.3s ease";
+
+    } else {
+        header.style.display = "none";
+    }
+}
